@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Speak | Prayatna</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav id="sidebar" class="sidebar">
+        <div class="close-btn" onclick="toggleMenu()">&times;</div>
+        <ul>
+            <li><a href="#events" onclick="toggleMenu()">Cricket Events</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">My Projects</a></li>
+            <li><a href="#socials" onclick="toggleMenu()">Social Media</a></li>
+            <li><a href="#" onclick="openSettings()">Settings</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="header-left">
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <div class="logo">
+                <img src="logo.png" alt="Logo" id="page-logo"> <span class="brand-name">Sports Speak</span>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <a href="#home">Home</a>
+            <a href="https://youtube.com/@sportsspeak-r2w" target="_blank">YouTube</a>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section id="home" class="hero">
+            <h1>Hi, I'm Prayatna Bhandari</h1>
+            <p>A passionate Cricket Fan & Content Creator from Nepal. Through <strong>Sports Speak</strong>, I bring you the latest insights into the world of cricket.</p>
+            <a href="https://youtube.com/@sportsspeak-r2w" target="_blank" class="sub-btn">Subscribe Now</a>
+        </section>
+
+        <section id="players">
+            <h2>Players I Talk About</h2>
+            <div class="grid-container">
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" alt="Player">
+                    <h3>Rohit Paudel</h3>
+                    <p>Nepal Captain</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" alt="Player">
+                    <h3>Sandeep Lamichhane</h3>
+                    <p>Leg Spinner</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" alt="Player">
+                    <h3>Gulshan Jha</h3>
+                    <p>All-rounder</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="events">
+            <h2>Major Cricket Events</h2>
+            <div class="event-list">
+                <div class="event-item">
+                    <h3>T20 World Cup 2026</h3>
+                    <p>Nepal's journey in the upcoming mega event.</p>
+                    <a href="#" class="vid-link">Watch Video</a>
+                </div>
+                <div class="event-item">
+                    <h3>Nepal Premier League (NPL)</h3>
+                    <p>The rise of domestic franchise cricket in Nepal.</p>
+                    <a href="#" class="vid-link">Watch Video</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="settings-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSettings()">&times;</span>
+            <h2>Settings</h2>
+            <label class="switch">
+                <input type="checkbox" id="dark-mode-toggle" onclick="toggleDarkMode()">
+                <span class="slider round"></span>
+            </label>
+            <span>Dark Mode</span>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Email: <a href="mailto:prayatnabhandari5@gmail.com">prayatnabhandari5@gmail.com</a></p>
+        </div>
+        <div class="footer-section">
+            <h3>Become a Cricket Fan</h3>
+            <button id="join-btn" onclick="joinFan()">Join the Squad</button>
+            <p id="join-msg"></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
